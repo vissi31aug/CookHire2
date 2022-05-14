@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+
+
+
+    <item android:title="Cook Type" >
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/oneDay"
+                    android:icon="@drawable/ic_baseline_plus_1"
+                    android:title="One-Day"/>
+
+                <item
+                    android:id="@+id/oneMonth"
+                    android:icon="@drawable/ic_baseline_month"
+                    android:title="One-Month"/>
+
+                <item
+                    android:id="@+id/permanent"
+                    android:icon="@drawable/ic_baseline_party"
+                    android:title="Permanent"/>
+
+                <item
+                    android:id="@+id/specialItem"
+                    android:icon="@drawable/ic_baseline_spellcheck_24"
+                    android:title="Special item"/>
+
+                <item
+                    android:id="@+id/mostHired"
+                    android:icon="@drawable/ic_baseline_24"
+                    android:title="Most Hired"/>
+
+                <item
+                    android:id="@+id/hireForParty"
+                    android:icon="@drawable/ic_baseline_party"
+                    android:title="Hire for Party"/>
+
+
+
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Actions" >
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/profile"
+                    android:icon="@drawable/ic_baseline_person"
+                    android:title="Profile"/>
+
+                <item
+                    android:id="@+id/notifications"
+                    android:icon="@drawable/ic_baseline_notifications"
+                    android:title="Notifications"/>
+
+                <item
+                    android:id="@+id/logOut"
+                    android:icon="@drawable/ic_baseline_logout1"
+                    android:title="Log Out"/>
+
+
+            </group>
+
+        </menu>
+
+    </item>
+
+
+    <item android:title="About" >
+
+
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+
+                <item
+                    android:id="@+id/share"
+                    android:icon="@drawable/ic_baseline_link"
+                    android:title="Share"/>
+
+                <item
+                    android:id="@+id/aboutApp"
+                    android:icon="@drawable/ic_baseline_app"
+                    android:title="About App"/>
+
+
+                <item
+                    android:id="@+id/aboutDeveloper"
+                    android:icon="@drawable/ic_baseline_group"
+                    android:title="About Developer"/>
+
+
+
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

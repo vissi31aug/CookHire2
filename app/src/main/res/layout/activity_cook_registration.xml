@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#Be50"
+    tools:context=".CookRegistrationActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardMaxElevation="10dp"
+        app:cardElevation="10dp"
+        android:background="#fff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/fcc"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textSize="25sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up to continue"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:gravity="center" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/profile_image"
+                    app:civ_border_width="2dp"
+                    android:layout_gravity="center"
+                    app:civ_border_color="#FF000000"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextInputLayoutStyle"
+                    app:boxStrokeColor="#000"
+                    app:hintTextAppearance="@drawable/ic_launcher_background"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/registerCookName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter full name"
+                        android:inputType="text"
+                        android:drawablePadding="5dp"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textColorHint="#000"
+                        android:drawableStart="@drawable/ic_person"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextInputLayoutStyle"
+                    app:boxStrokeColor="#000"
+                    app:hintTextAppearance="@drawable/ic_launcher_background"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/registerCookEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Email"
+                        android:inputType="textEmailAddress"
+                        android:drawablePadding="10dp"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textColorHint="#000"
+                        android:drawableStart="@drawable/ic_email"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextInputLayoutStyle"
+                    app:boxStrokeColor="#000"
+                    app:hintTextAppearance="@drawable/ic_launcher_background"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/registerCookPhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Mobile Number"
+                        android:inputType="number"
+                        android:drawablePadding="10dp"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textColorHint="#000"
+                        android:drawableStart="@drawable/ic_baseline_phone_android_24"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="#fff"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:entries="@array/cookType"/>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextInputLayoutStyle"
+                    app:boxStrokeColor="#000"
+                    app:hintTextAppearance="@drawable/ic_launcher_background"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/setPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Set Price"
+                        android:inputType="number"
+                        android:drawablePadding="10dp"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textColorHint="#000"
+                        android:drawableStart="@drawable/ic_money"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextInputLayoutStyle"
+                    app:boxStrokeColor="#000"
+                    app:hintTextAppearance="@drawable/ic_launcher_background"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/registerCookPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Password"
+                        android:inputType="textPassword"
+                        android:drawablePadding="10dp"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textColorHint="#000"
+                        android:drawableStart="@drawable/ic_lock"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/registerCookSignUpButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up Now"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#aff"
+                    android:background="@drawable/button_background"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/registerCookSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Already Registered? Sign In"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:textSize="20sp"/>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

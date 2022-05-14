@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+
+
+
+
+    <item android:title="Actions" >
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/profile"
+                    android:icon="@drawable/ic_baseline_person"
+                    android:title="Profile"/>
+
+                <item
+                    android:id="@+id/notifications"
+                    android:icon="@drawable/ic_baseline_notifications"
+                    android:title="Notifications"/>
+
+                <item
+                    android:id="@+id/logOut"
+                    android:icon="@drawable/ic_baseline_logout1"
+                    android:title="Log Out"/>
+
+
+            </group>
+
+        </menu>
+
+    </item>
+
+
+    <item android:title="About" >
+
+
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+
+                <item
+                    android:id="@+id/share"
+                    android:icon="@drawable/ic_baseline_link"
+                    android:title="Share"/>
+
+                <item
+                    android:id="@+id/aboutApp"
+                    android:icon="@drawable/ic_baseline_app"
+                    android:title="About App"/>
+
+
+                <item
+                    android:id="@+id/aboutDeveloper"
+                    android:icon="@drawable/ic_baseline_group"
+                    android:title="About Developer"/>
+
+
+
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

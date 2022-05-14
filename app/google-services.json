@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "301259870422",
+    "project_id": "cookhire-dc257",
+    "storage_bucket": "cookhire-dc257.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301259870422:android:aaee6564cc63a74bf0f977",
+        "android_client_info": {
+          "package_name": "com.example.cookhire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301259870422-b1his5jps95cvlpv1g24eovmaag74v9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxMgpPPekVFB8Oo6v8wbw-hwew00S-3o0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301259870422-b1his5jps95cvlpv1g24eovmaag74v9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
