@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private List<User> userList;
     private UserAdapter userAdapter;
+    int i=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
